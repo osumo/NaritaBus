@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>北海道物産ECサイト - プロトタイプ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="text-center mb-5">
+            <h1>北海道物産ECサイト (プロトタイプ)</h1>
+            <p class="lead">「北海道の魅力をデジタル技術で最大化し、全国へ届ける」</p>
+        </header>
+
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="list-group">
+                    <div class="list-group-item list-group-item-secondary">【メイン機能】</div>
+                    <a href="/products" class="list-group-item list-group-item-action">商品一覧・検索</a>
+                    <a href="/diagnosis" class="list-group-item list-group-item-action">質問形式絞り込み (診断) ☆</a>
+                    <a href="/product/detail?id=1" class="list-group-item list-group-item-action">商品詳細 (生産過程表示)</a>
+                    
+                    <div class="list-group-item list-group-item-secondary mt-3">【ユーザー・アカウント】</div>
+                    <a href="/register" class="list-group-item list-group-item-action">会員登録</a>
+                    <a href="/login" class="list-group-item list-group-item-action">ログイン</a>
+                    <a href="/account" class="list-group-item list-group-item-action">マイアカウント (ランク・育成要素)</a>
+                    
+                    <div class="list-group-item list-group-item-secondary mt-3">【カート・決済】</div>
+                    <a href="/cart" class="list-group-item list-group-item-action">買い物カート</a>
+                    <a href="/checkout/confirm" class="list-group-item list-group-item-action">決済確認 (チップ選択 ☆)</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-5 text-center text-muted">
+            <p>&copy; 2026 北海道物産ECプロトタイプチーム</p>
+        </footer>
+    </div>
+</body>
+</html>

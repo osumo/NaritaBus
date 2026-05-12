@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>商品詳細 - 北海道物産EC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- 商品画像 placeholder -->
+                <div class="bg-light d-flex align-items-center justify-content-center" style="height: 400px;">
+                    [商品画像]
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 th:text="${productName}">商品名（表示予定）</h2>
+                <p class="text-muted" th:text="${category}">カテゴリ</p>
+                <h3 class="text-danger">¥ <span th:text="${price}">0</span></h3>
+                
+                <hr>
+                
+                <!-- [要件: 生産過程の記述 必須項目] -->
+                <h4>生産者のこだわり・ストーリー</h4>
+                <div class="p-3 bg-light border rounded mb-4">
+                    <p th:text="${productionProcess}">
+                        ここに生産過程やストーリーが表示されます。
+                        （例: 北海道の厳しい寒さを活かした熟成方法、生産者の顔が見える安心感など）
+                    </p>
+                </div>
+                
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary">カートに入れる</button>
+                    <button class="btn btn-outline-danger">お気に入り登録</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-5">
+            <a href="/products" class="btn btn-secondary">一覧に戻る</a>
+        </div>
+    </div>
+</body>
+</html>
