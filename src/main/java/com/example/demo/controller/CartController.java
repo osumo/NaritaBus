@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 /**
- * [担当: Cさん] カート・決済・配送
- * - カート機能・住所入力・メール送信処理
+ * [担当: Cさん] 購買・配送フロー (カート・注文入力・メール送信)
+ * [担当: Dさん] 生産者応援 (チップ機能) ☆
  */
 @Controller
 public class CartController {

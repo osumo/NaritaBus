@@ -5,9 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 /**
- * [担当: Aさん] ユーザー・アカウント基盤
- * - 登録・ログインのロジック
- * [担当: Dさん] 育成要素・ランクシステム ☆
+ * [担当: Aさん] ユーザー認証・登録基盤 (登録・ログイン)
+ * [担当: Dさん] マイページ・エンゲージメント (ランク・育成要素・ポイント) ☆
  */
 @Controller
 public class UserController {

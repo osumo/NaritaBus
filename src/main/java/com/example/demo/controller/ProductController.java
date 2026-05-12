@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * [担当: Bさん] 商品・検索エンジン
- * - 商品一覧・詳細・お気に入り機能
+ * [担当: Bさん] 商品カタログ (一覧・検索・詳細表示)
+ * [担当: Dさん] ユーザー体験 (診断型検索・お気に入り機能) ☆
  */
 @Controller
 public class ProductController {
